@@ -3,6 +3,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import portrait from "@/assets/rashmi-portrait.png";
 
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -55,10 +56,15 @@ function Index() {
               I coordinate Agile teams, plan sprints, manage risk, and turn ambiguous goals into delivered outcomes. Based in Sri Lanka, working with the world.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href="/Rashmi-Tharaka-CV.pdf" download className="rounded-full text-white px-6 py-3 text-sm inline-flex items-center gap-2 glow"
-                style={{ background: "var(--gradient-primary)" }}>
-                <i className="fa-solid fa-download" /> Download CV
-              </a>
+              <a
+  href="/Rashmi-Tharaka-CV.pdf"
+  download="Rashmi-Tharaka-CV.pdf"
+  className="rounded-full text-white px-6 py-3 text-sm inline-flex items-center gap-2 glow"
+  style={{ background: "var(--gradient-primary)" }}
+>
+  <i className="fa-solid fa-download" />
+  Download CV
+</a>
               <Link to="/contact" className="glass rounded-full px-6 py-3 text-sm flex items-center gap-2 hover:bg-white/10">
                 Get in Touch
               </Link>
