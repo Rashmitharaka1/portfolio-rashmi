@@ -7,17 +7,68 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "Rashmi Tharaka | Project Manager" },
-      { name: "description", content: "About Rashmi Tharaka Sewwandi: education, methodology, skills and certifications." },
+      {
+        name: "description",
+        content:
+          "About Rashmi Tharaka Sewwandi: education, methodology, skills and certifications.",
+      },
     ],
   }),
   component: About,
 });
 
 const skillGroups = [
-  { icon: "fa-diagram-project", title: "Project Management Tools", items: ["Jira", "Trello", "Microsoft Project", "Notion", "Confluence", "Google Workspace", "Microsoft 365"] },
-  { icon: "fa-recycle", title: "Methodologies", items: ["Agile", "Scrum", "Kanban", "SDLC", "Requirements Engineering", "Sprint Planning", "Backlog Management"] },
-  { icon: "fa-chart-column", title: "Data & Analysis", items: ["Power BI", "Excel", "KPI Tracking", "Dashboards", "Project Metrics"] },
-  { icon: "fa-code", title: "Technical", items: ["Java", "JavaScript", "React.js", "Node.js", "Tailwind CSS", "Laravel", "REST APIs", "MySQL", "MongoDB"] },
+  {
+    icon: "fa-diagram-project",
+    title: "Project Management Tools",
+    items: [
+      "Jira",
+      "Trello",
+      "Microsoft Project",
+      "Notion",
+      "Confluence",
+      "Google Workspace",
+      "Microsoft 365",
+    ],
+  },
+  {
+    icon: "fa-recycle",
+    title: "Methodologies",
+    items: [
+      "Agile",
+      "Scrum",
+      "Kanban",
+      "SDLC",
+      "Requirements Engineering",
+      "Sprint Planning",
+      "Backlog Management",
+    ],
+  },
+  {
+    icon: "fa-chart-column",
+    title: "Data & Analysis",
+    items: ["Power BI", "Excel", "KPI Tracking", "Dashboards", "Project Metrics"],
+  },
+  {
+    icon: "fa-code",
+    title: "Technical",
+    items: [
+      "Java",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "Node.js",
+      "Tailwind CSS",
+      "Laravel",
+      "REST APIs",
+      "Responsive UI Development",
+      "Website Maintenance",
+      "Git & GitHub",
+      "MySQL",
+      "MongoDB",
+    ],
+  },
 ];
 
 const soft = [
@@ -44,8 +95,14 @@ const certs = [
 function About() {
   return (
     <div className="min-h-screen relative overflow-hidden">
-      <div className="blob w-[500px] h-[500px] -top-40 right-0" style={{ background: "var(--purple)" }} />
-      <div className="blob w-[400px] h-[400px] top-1/2 -left-40" style={{ background: "var(--blue)" }} />
+      <div
+        className="blob w-[500px] h-[500px] -top-40 right-0"
+        style={{ background: "var(--purple)" }}
+      />
+      <div
+        className="blob w-[400px] h-[400px] top-1/2 -left-40"
+        style={{ background: "var(--blue)" }}
+      />
 
       <SiteHeader />
 
@@ -53,9 +110,16 @@ function About() {
         <div className="grid md:grid-cols-12 gap-10 items-center">
           <div className="md:col-span-5 reveal">
             <div className="relative">
-              <div className="absolute -inset-4 rounded-[2rem] opacity-50 blur-2xl" style={{ background: "var(--gradient-primary)" }} />
+              <div
+                className="absolute -inset-4 rounded-[2rem] opacity-50 blur-2xl"
+                style={{ background: "var(--gradient-primary)" }}
+              />
               <div className="relative glass-strong rounded-[2rem] p-3">
-                <img src={portrait} alt="Rashmi Tharaka" className="w-full aspect-[4/5] object-cover rounded-[1.5rem]" />
+                <img
+                  src={portrait}
+                  alt="Rashmi Tharaka"
+                  className="w-full aspect-[4/5] object-cover rounded-[1.5rem]"
+                />
               </div>
             </div>
           </div>
@@ -66,10 +130,14 @@ function About() {
             </h1>
             <div className="mt-6 space-y-4 text-foreground/80 leading-relaxed">
               <p>
-                I'm an undergraduate at Sabaragamuwa University of Sri Lanka studying Computing & Information Systems - with a clear north star: becoming a Project Manager who delivers calmly, clearly, and consistently.
+                I'm an undergraduate at Sabaragamuwa University of Sri Lanka studying Computing &
+                Information Systems - with a clear north star: becoming a Project Manager who
+                delivers calmly, clearly, and consistently.
               </p>
               <p>
-                Across academic projects, I've coordinated Agile teams, planned sprints, tracked deliverables, and made sure the quiet work - communication, governance, follow-through - actually happens.
+                Across academic projects, I've coordinated Agile teams, planned sprints, tracked
+                deliverables, and made sure the quiet work - communication, governance,
+                follow-through - actually happens.
               </p>
             </div>
           </div>
@@ -80,7 +148,9 @@ function About() {
       <section className="mx-auto max-w-7xl px-6 md:px-10 py-16">
         <div className="text-center mb-12">
           <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3">Journey</p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold">Education <span className="gradient-text">Timeline</span></h2>
+          <h2 className="font-display text-4xl md:text-5xl font-bold">
+            Education <span className="gradient-text">Timeline</span>
+          </h2>
         </div>
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {[
@@ -88,13 +158,20 @@ function About() {
               year: "2023 — Present",
               title: "BSc. (Hons) Computing & Information Systems",
               place: "Sabaragamuwa University of Sri Lanka",
-              details: ["Undergraduate - focus on Project Management, Business Analytics & Software Engineering"],
+              details: [
+                "Undergraduate - focus on Project Management, Business Analytics & Software Engineering",
+              ],
             },
             {
               year: "2018 — 2020",
               title: "G.C.E. Advanced Level - Physical Science",
               place: "Siridhamma College",
-              details: ["Combined Mathematics — B", "Chemistry — C", "Physics — C", "Z-Score: 1.0027"],
+              details: [
+                "Combined Mathematics — B",
+                "Chemistry — C",
+                "Physics — C",
+                "Z-Score: 1.0027",
+              ],
             },
             {
               year: "2017",
@@ -120,11 +197,64 @@ function About() {
         </div>
       </section>
 
+      {/* Experience */}
+      <section className="mx-auto max-w-7xl px-6 md:px-10 py-16">
+        <div className="text-center mb-12">
+          <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3">
+            Professional Experience
+          </p>
+          <h2 className="font-display text-4xl md:text-5xl font-bold">
+            Experience <span className="gradient-text">Timeline</span>
+          </h2>
+        </div>
+        <div className="max-w-4xl mx-auto">
+          <article className="glass rounded-3xl p-7 md:p-9">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
+              <div>
+                <p className="text-xs text-primary uppercase tracking-wider font-mono">
+                  Frontend Development
+                </p>
+                <h3 className="font-display text-2xl font-semibold mt-3">
+                  Frontend Developer Intern
+                </h3>
+                <p className="text-muted-foreground mt-1">Gamage Recruiters (Pvt) Ltd.</p>
+              </div>
+              <p className="text-sm text-primary md:text-right">12 January 2026 – 13 July 2026</p>
+            </div>
+            <p className="text-sm text-foreground/80 mt-6 leading-relaxed">
+              Successfully completed a six-month internship, building practical experience in
+              frontend development, user interface implementation, responsive web design, REST API
+              integration, website maintenance, and testing.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-2">
+              {[
+                "Frontend Development",
+                "UI Development",
+                "Responsive Design",
+                "REST API Integration",
+                "Website Maintenance",
+                "Testing & Debugging",
+                "Git & GitHub",
+              ].map((skill) => (
+                <span
+                  key={skill}
+                  className="text-sm px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-foreground/85"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </article>
+        </div>
+      </section>
+
       {/* Skills */}
       <section className="mx-auto max-w-7xl px-6 md:px-10 py-16">
         <div className="text-center mb-12">
           <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3">Toolkit</p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold">Skills & <span className="gradient-text">Tools</span></h2>
+          <h2 className="font-display text-4xl md:text-5xl font-bold">
+            Skills & <span className="gradient-text">Tools</span>
+          </h2>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
           {skillGroups.map((g) => (
@@ -132,7 +262,12 @@ function About() {
               <h3 className="font-display text-xl font-semibold mb-5">{g.title}</h3>
               <div className="flex flex-wrap gap-2">
                 {g.items.map((i) => (
-                  <span key={i} className="text-sm px-3 py-1.5 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">{i}</span>
+                  <span
+                    key={i}
+                    className="text-sm px-3 py-1.5 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition-colors"
+                  >
+                    {i}
+                  </span>
                 ))}
               </div>
             </div>
@@ -143,12 +278,19 @@ function About() {
       {/* Soft skills */}
       <section className="mx-auto max-w-7xl px-6 md:px-10 py-16">
         <div className="text-center mb-12">
-          <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3">Operating Principles</p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold">Soft <span className="gradient-text">Skills</span></h2>
+          <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3">
+            Operating Principles
+          </p>
+          <h2 className="font-display text-4xl md:text-5xl font-bold">
+            Soft <span className="gradient-text">Skills</span>
+          </h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {soft.map((s) => (
-            <div key={s.label} className="glass rounded-2xl p-5 text-center hover:bg-white/10 transition-colors">
+            <div
+              key={s.label}
+              className="glass rounded-2xl p-5 text-center hover:bg-white/10 transition-colors"
+            >
               <p className="text-sm font-medium">{s.label}</p>
             </div>
           ))}
@@ -159,7 +301,9 @@ function About() {
       <section className="mx-auto max-w-7xl px-6 md:px-10 py-16">
         <div className="text-center mb-12">
           <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3">Achievements</p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold">Certifi<span className="gradient-text">cations</span></h2>
+          <h2 className="font-display text-4xl md:text-5xl font-bold">
+            Certifi<span className="gradient-text">cations</span>
+          </h2>
         </div>
         <div className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
           {certs.map((c) => (

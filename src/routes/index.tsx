@@ -25,6 +25,17 @@ const pmSkills = [
   { label: "Requirements Engineering", desc: "Clarifying scope, capturing user stories and managing change." },
 ];
 
+const internshipSkills = [
+  "React.js & JavaScript",
+  "UI Development",
+  "REST API Integration",
+  "Responsive Web Design",
+  "HTML & CSS",
+  "Website Maintenance",
+  "Testing & Bug Fixing",
+  "Git & GitHub",
+];
+
 const projects = [
   { t: "CircadiaLux", s: "Smart Healthcare Lighting", d: "Coordinated a 5-person Agile team across IoT, ML and frontend. Ran sprint planning and stakeholder demos.", tags: ["Scrum Lead", "5 Sprints", "IoT + ML"] },
   { t: "Convo", s: "Real-time Chat App", d: "Solo end-to-end delivery on the MERN stack — scoped backlog, planned releases, shipped on schedule.", tags: ["Solo PM", "MERN"] },
@@ -49,7 +60,7 @@ function Index() {
               Available for Project Manager opportunities
             </div>
             <h1 className="font-display font-bold text-5xl md:text-7xl leading-[1.05] tracking-tight">
-              Hi, I'm <span className="gradient-text">Rashmi</span><br />
+              Hi, I'm <span className="gradient-text">Rashmi Tharaka</span><br />
               Project Manager
             </h1>
             <p className="mt-6 text-lg text-foreground/75 leading-relaxed max-w-xl">
@@ -107,6 +118,47 @@ function Index() {
               <p className="text-xs uppercase tracking-wider text-muted-foreground mt-2">{s.v}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Internship Experience */}
+      <section className="mx-auto max-w-7xl px-6 md:px-10 py-16">
+        <div className="glass-strong rounded-3xl p-8 md:p-12 relative overflow-hidden">
+          <div className="blob w-[320px] h-[320px] -bottom-40 -right-24" style={{ background: "var(--blue)" }} />
+          <div className="relative grid lg:grid-cols-[0.85fr_1.15fr] gap-10 lg:gap-16 items-start">
+            <div>
+              <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-xs text-primary mb-6">
+                <i className="fa-solid fa-briefcase" />
+                Professional Experience
+              </div>
+              <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3">Internship Experience</p>
+              <h2 className="font-display text-4xl md:text-5xl font-bold leading-tight">
+                Frontend Developer <span className="gradient-text">Intern</span>
+              </h2>
+              <p className="mt-5 text-foreground/75 leading-relaxed">
+                Gamage Recruiters (Pvt) Ltd. · 12 January 2026 – 13 July 2026
+              </p>
+            </div>
+
+            <div>
+              <div className="border-l-2 border-primary/60 pl-5 mb-8">
+                <p className="font-display text-xl font-semibold">Contribution Highlights</p>
+                <p className="text-sm text-foreground/65 mt-2 leading-relaxed">
+                  Successfully completed a six-month internship, contributing to user-focused frontend work, responsive interface development, API integration, testing, and ongoing website maintenance.
+                </p>
+              </div>
+              <div className="grid sm:grid-cols-2 gap-3">
+                {internshipSkills.map((skill) => (
+                  <div key={skill} className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm">
+                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/15 text-primary">
+                      <i className="fa-solid fa-check text-[10px]" />
+                    </span>
+                    {skill}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
